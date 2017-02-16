@@ -1,6 +1,9 @@
 /**
  * Created by ethan on 2017-02-07.
  */
+
+
+
 public class Student extends Person {
     String major;
     boolean fulltime;
@@ -8,10 +11,15 @@ public class Student extends Person {
 
     public Student(String name, String emailAddress, String major, boolean fulltime) {
 
+    List<Course> courseList;
+
     public Student(String name, String emailAddress, String major) {
         super(name, emailAddress);
         this.major = major;
         this.fulltime = fulltime;
+    }
+    public void addCourse(Course c) {
+
     }
 
     public String toString() {
